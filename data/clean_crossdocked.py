@@ -17,7 +17,7 @@ import sascorer
 TYPES_FILENAME = 'types/it2_tt_v1.1_completeset_train0.types'  # 'types/it2_tt_completeset_train0.types'
 
 if __name__ == '__main__':
-    # Useage: python clean_crossdocked.py --source Crossdock2020_v1.1 --dest crossdocked_v1.1_rmsd2.0 --rmsd_thr 2.0
+    # Useage: python clean_crossdocked.py --source Crossdock2020_v1.1 --dest crossdocked_v1.1_rmsd1.0 --rmsd_thr 1.0
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=str, default='./data/CrossDocked2020')
     parser.add_argument('--dest', type=str, required=True)
