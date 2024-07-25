@@ -84,16 +84,16 @@ def main(args):
 
 
 if __name__ == "__main__":
-    # Useage: python split_dataset.py --path ./PDBbind_v2020_pocket10 --desti ./PDBbind_pocket10_split.pt --train 15487 --val 1936 --test 1936 --val_num -1 --test_num 1936
+    # Useage: python split_dataset.py --path ./PDBbind_v2020_pocket10 --desti ./PDBbind_pocket10_split.pt --train 17327 --val 1825 --test 100
     parser = argparse.ArgumentParser()
     parser.add_argument("--path", type=str, default="./PDBbind_v2020_pocket10")
     parser.add_argument("--desti", type=str, default="./PDBbind_pocket10_split.pt")
     parser.add_argument("--fixed_split", type=str, default=None)
-    parser.add_argument("--train", type=int, default=100000)
-    parser.add_argument("--val", type=int, default=1000)
-    parser.add_argument("--test", type=int, default=20000)
+    parser.add_argument("--train", type=int, default=15000)
+    parser.add_argument("--val", type=int, default=2000)
+    parser.add_argument("--test", type=int, default=100)
     parser.add_argument("--val_num", type=int, default=-1)
-    parser.add_argument("--test_num", type=int, default=100)
+    parser.add_argument("--test_num", type=int, default=-1)
     parser.add_argument("--seed", type=int, default=2023)
     args = parser.parse_args()
 
