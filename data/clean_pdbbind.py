@@ -16,8 +16,6 @@ import sascorer
 KMAP = {'Ki': 1, 'Kd': 2, 'IC50': 3}
 
 def main(args):
-    os.makedirs(args.desti, exist_ok=True)
-
     index = []
     index_path = os.path.join(args.source, "index/INDEX_general_PL_data.2020")
     with open(index_path, 'r') as fr:
@@ -46,17 +44,16 @@ def main(args):
                 print(pdbid, str(e))
                 continue
     
-    new_index_path = os.path.join(args.desti, "index.pkl")
+    new_index_path = os.path.join(args.source, "index.pkl")
     with open(new_index_path, "wb") as f:
         pickle.dump(index, f)
-    print(f"Processing {len(index)} protein-ligand pais. Processed data is stored in {args.desti}")
+    print(f"Processing {len(index)} protein-ligand pais. Processed data is stored in {args.source}")
 
 
 if __name__ == "__main__":
-    # Useage: python clean_pdbbind.py --source ./PDBbind_v2020 --desti ./PDBbind_v2020_processed
+    # Useage: python clean_pdbbind.py --source ./PDBbind_v2020
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=str, default="./PDBbind_v2020")
-    parser.add_argument("--desti", type=str, required=True, default="./PDBbind_v2020_processed")
     args = parser.parse_args()
 
     main(args)
