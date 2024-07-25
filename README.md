@@ -7,7 +7,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
 
 ## Installation
 
-### Install environment via conda yaml file
+### Install conda environment via yaml file
 ```bash
 # Create the environment
 conda env create -f env.yml
@@ -17,7 +17,14 @@ conda activate diffgui
 
 ### Install Vina Docking
 ```bash
+pip install meeko==0.1.dev3 scipy pdb2pqr vina==1.2.2
 python -m pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+```
+
+### Install other required softwares
+```bash
+pip install diffusers==0.21.4 docutils==0.17.1 filelock==3.12.2 fsspec==2023.1.0
+pip install 
 ```
 The package version should be changed according to your need.
 
