@@ -20,3 +20,7 @@ conda activate diffgui
 pip install meeko==0.1.dev3 scipy pdb2pqr vina==1.2.2 
 python -m pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
 ```
+The package version should be changed according to your need.
+
+## Datasets
+The datasets utilized by this project are PDBbind and CrossDocked, which are saved in the Google Drive [data](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r) folder.
