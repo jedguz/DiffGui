@@ -1,1 +1,1 @@
-Target-aware 3D molecular generation based on guided equivariant diffusion model.
+# Target-aware 3D Molecular Generation Based on Guided Equivariant Diffusion Model
