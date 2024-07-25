@@ -24,3 +24,7 @@ The package version should be changed according to your need.
 
 ## Datasets
 The benchmark datasets utilized in this project, PDBbind and CrossDocked, are stored in the Google Drive [data](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r) folder.
+### PDBbind
+To train the model from scratch, you need to download the preprocessed lmdb file and split file:
+* `PDBbind_v2020_pocket10_processed_final.lmdb`
+* `PDBbind_pocket10_split.pt`
