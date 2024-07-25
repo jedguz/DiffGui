@@ -33,4 +33,8 @@ To process the dataset from scratch, you need to download PDBbind_v2020 from [he
     ```bash
     python clean_pdbbind.py --source ./PDBbind_v2020
     ```
+* [extract_pockets.py](data/extract_pockets.py) will extract the pocket file from a 10A region around the binding ligand in original protein file.
+    ```bash
+    python extract_pockets.py --source ./PDBbind_v2020 --desti ./PDBbind_v2020_pocket10
+    ```
     
