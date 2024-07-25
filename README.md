@@ -24,7 +24,8 @@ python -m pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py
 ### Install other required softwares
 ```bash
 pip install diffusers==0.21.4 docutils==0.17.1 filelock==3.12.2 fsspec==2023.1.0
-pip install 
+pip install softwares/torch_cluster-1.6.1+pt113cu116-cp37-cp37m-linux_x86_64.whl
+pip install softwares/torch_scatter-2.1.1+pt113cu116-cp37-cp37m-linux_x86_64.whl
 ```
 The package version should be changed according to your need.
 
@@ -44,4 +45,7 @@ To process the dataset from scratch, you need to download PDBbind_v2020 from [he
     ```bash
     python extract_pockets.py --source ./PDBbind_v2020 --desti ./PDBbind_v2020_pocket10
     ```
-    
+* [split_pl_dataset.py](data/split_pl_dataset.py) will split the train, validation and test set.
+    ```bash
+    python split_dataset.py --path ./PDBbind_v2020_pocket10 --desti ./PDBbind_pocket10_split.pt --train 17327 --val 1825 --test 100
+    ```
