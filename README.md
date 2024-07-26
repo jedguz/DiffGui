@@ -56,7 +56,7 @@ To train the model from scratch, you need to download the preprocessed lmdb file
 * `crossdocked_pocket10_pose_split.pt`
 
 To process the dataset from scratch, you need to download CrossDocked2020 v1.1 from [here](https://bits.csb.pitt.edu/files/crossdock2020/), save it in `data`, unzip it, and run the following scripts in `data`:
-* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and retain the poses with RMSD < 1A. It will generate a `index.pkl` file and create a new directory containing the filtered data (corresponds to `crossdocked_v1.1_rmsd1.0.tar.gz` in the drive). *You don't need these files if you have downloaded .lmdb file.*
+* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and retain the poses with RMSD < 1 A. It will generate a `index.pkl` file and create a new directory containing the filtered data (corresponds to `crossdocked_v1.1_rmsd1.0.tar.gz` in the drive). *You don't need these files if you have downloaded .lmdb file.*
     ```bash
     python clean_crossdocked.py --source CrossDocked2020 --dest crossdocked_v1.1_rmsd1.0 --rmsd_thr 1.0
     ```
@@ -68,3 +68,15 @@ To process the dataset from scratch, you need to download CrossDocked2020 v1.1 f
     ```bash
     python split_dataset.py --path data/crossdocked_v1.1_rmsd1.0_pocket10 --dest data/crossdocked_pocket10_pose_split.pt --fixed_split data/split_by_name.pt
     ```
+
+## Training
+### Trained model checkpoint
+The trained model checkpoint files are stored in [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r).
+* `pretrained.pt` is the checkpoint file pretrained on the CrossDocked dataset without labeling.
+* `trained.pt` is the checkpoint file trained on the PDBbind dataset.
+* `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used during sampling process.
+
+### Training from scratch
+```bash
+python scripts/train.py --config ./configs/train/train.yml
+```
