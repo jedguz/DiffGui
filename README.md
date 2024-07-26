@@ -95,7 +95,7 @@ The values of logp, tpsa, sa, qed, aff can be adjusted to generate molecules wit
 * `logp` is octanol-water partition coefficient. It ranges from -2.0 to 5.0. High value indicates hydrophobicity and low value indicates hydrophilicity. The logp values of most drugs are located between 1.0 and 3.0.
 * `tpsa` is topogical polar surface area. High value indicates high water solubility and low value indicates high lipid solubility. The tpsa values of most drugs are located between 20 and 60.
 * `sa` is synthetic accessibility. It ranges from 0.0 to 10.0. The lower the sa value, the easier the organic synthesis. The reasonable sa values of most drugs are located between 0.0 and 5.0.
-* `qed` is quantitative estimate of drug-likeness. It ranges from 0.0 to 1.0. The higher the qed value, the higher the drug-likeness.
+* `qed` is quantitative estimate of drug-likeness. It ranges from 0.0 to 1.0. The higher the qed value, the greater the drug-likeness.
 * `aff` is binding affinity. It is calculated by -log10(Kd). High value indicates high binding affinity. For instance, 8.0 corresponds to 10 nM Kd.
 
 ### Sample molecules for given protein pocket
