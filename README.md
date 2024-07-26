@@ -45,7 +45,7 @@ To process the dataset from scratch, you need to download PDBbind_v2020 from [he
     ```bash
     python extract_pockets.py --source PDBbind_v2020 --desti PDBbind_v2020_pocket10
     ```
-* [split_pl_dataset.py](data/split_pl_dataset.py) will split the train, validation and test set.
+* [split_dataset.py](data/split_dataset.py) will split the train, validation and test set.
     ```bash
     python split_dataset.py --path PDBbind_v2020_pocket10 --desti PDBbind_pocket10_split.pt --train 17327 --val 1825 --test 100
     ```
@@ -56,8 +56,15 @@ To train the model from scratch, you need to download the preprocessed lmdb file
 * `crossdocked_pocket10_pose_split.pt`
 
 To process the dataset from scratch, you need to download CrossDocked2020 v1.1 from [here](https://bits.csb.pitt.edu/files/crossdock2020/), save it in `data`, unzip it, and run the following scripts in `data`:
-* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and keep the ones with RMSD < 1A. It will generate a `index.pkl` file and create a new directory containing the filtered data (corresponds to `crossdocked_v1.1_rmsd1.0.tar.gz` in the drive). *You don't need these files if you have downloaded .lmdb file.*
+* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and keep the poses with RMSD < 1A. It will generate a `index.pkl` file and create a new directory containing the filtered data (corresponds to `crossdocked_v1.1_rmsd1.0.tar.gz` in the drive). *You don't need these files if you have downloaded .lmdb file.*
     ```bash
     python clean_crossdocked.py --source CrossDocked2020 --dest crossdocked_v1.1_rmsd1.0 --rmsd_thr 1.0
     ```
-
+* [extract_pockets.py](data/extract_pockets.py) will extract the pocket file from a 10 A region around the binding ligand in the original protein file.
+    ```bash
+    python extract_pockets.py --source crossdocked_v1.1_rmsd1.0 --dest crossdocked_v1.1_rmsd1.0_pocket10
+    ```
+* [split_dataset.py](data/split_dataset.py) will split the training and test set. We use the split file `split_by_name.pt`, which can be downloaded in the Google Drive - data folder.
+    ```bash
+    python split_dataset.py --path data/crossdocked_v1.1_rmsd1.0_pocket10 --dest data/crossdocked_pocket10_pose_split.pt --fixed_split data/split_by_name.pt
+    ```
