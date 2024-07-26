@@ -112,3 +112,5 @@ Revise the sample.yml file to sample molecules based on given fragments. Set `ta
 python scripts/evaluate.py --config configs/eval/eval.yml
 ```
 The docking mode can be chosen from {qvina, vina_score, vina_dock, none}.
+
+## Citation
