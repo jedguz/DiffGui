@@ -73,8 +73,10 @@ train:
 
 data:
   name: protein_ligand
-  path: data/pdbbind_data/PDBbind_v2020_pocket10
-  split: data/pdbbind_data/PDBbind_pocket10_split.pt
+  path: data/PDBbind_v2020_pocket10
+  split: data/PDBbind_pocket10_split.pt
+  #path: data/crossdocked_v1.1_rmsd1.0_pocket10
+  #split: data/crossdocked_pocket10_pose_split.pt
   transform:
     ligand_atom_mode: aromatic # [basic, aromatic, full]
     random_rot: False
