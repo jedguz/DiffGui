@@ -93,6 +93,8 @@ python scripts/sample.py --config configs/sample/sample.yml
 ```
 ### Sample molecules for given protein pocket
 Revise the sample.yml file to sample molecules for any given protein pocket. Set `target` to pocket file (eg. sample/3ztx_pocket.pdb) and set `mode` to pocket.
+
 ### Sample molecules for all pockets in test set
+Revise the sample.yml file to sample molecules for all pockets in test set. Set `target` to None and set `mode` to test.
 
 ### Sample molecules based on given fragments (lead optimization)
