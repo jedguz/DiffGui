@@ -82,7 +82,7 @@ python scripts/train.py --config configs/train/train.yml
 ```
 If you want to resume the training, you need to revise the train.yml file. Change `resume` to True and change `resume_ckpt` to the checkpoint that you want to resume, eg. 100000.pt. In addition, `log_dir` should be defined by `args.logdir` (the previous training directory) instead of using `get_new_log_dir` function.
 
-### Training the bond predictor
+### Training bond predictor
 ```bash
 python scripts/train_bond.py --config configs/train/train_bond.yml
 ```
