@@ -80,10 +80,19 @@ The trained model checkpoint files are stored in [here](https://drive.google.com
 ```bash
 python scripts/train.py --config configs/train/train.yml
 ```
-If you want to resume the training, you need to revise the train.yml file. Change `resume` to True and change `resume_ckpt` to the checkpoint that you want to resume, eg. 100000.pt. In addition, `log_dir` should be defined by `args.logdir` (the previous training directory) instead of using `get_new_log_dir` function.
+If you want to resume the training, you need to revise the train.yml file. Set `resume` to True and set `resume_ckpt` to the checkpoint that you want to resume, eg. 100000.pt. In addition, `log_dir` should be defined by `args.logdir` (the previous training directory) instead of using `get_new_log_dir` function.
 
 ### Training bond predictor
 ```bash
 python scripts/train_bond.py --config configs/train/train_bond.yml
 ```
 
+## Inference
+```bash
+python scripts/sample.py --config configs/sample/sample.yml
+```
+### Sample molecules for given protein pocket
+Revise the sample.yml file to sample molecules for any given protein pocket. Set 
+### Sample molecules for all pockets in test set
+
+### Sample molecules based on given fragments (lead optimization)
