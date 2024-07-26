@@ -364,7 +364,10 @@ def main(args):
             for i, data_finished in enumerate(sorted_mol_list):
                 smiles_f.write(data_finished['smiles'] + '\n')
                 rdmol = data_finished['rdmol']
-                Chem.MolToMolFile(rdmol, os.path.join(sdf_dir, '%d.sdf' % (i)))
+                try:
+                    Chem.MolToMolFile(rdmol, os.path.join(sdf_dir, '%d.sdf' % (i)))
+                except:
+                    continue
 
                 if 'traj' in data_finished:
                     writer = Chem.SDWriter(os.path.join(sdf_dir, 'traj_%d.sdf' % (i)))
