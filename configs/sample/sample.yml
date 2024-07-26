@@ -1,5 +1,5 @@
 model:
-  checkpoint: ckpt/250000.pt
+  checkpoint: ckpt/trained.pt
   target: sample/WDR5_pocket.pdb
   ligand: None
   frag: None
@@ -10,7 +10,7 @@ model:
   qed: 0.80
   aff: 12.00
 
-bond_predictor: ckpt/600000.pt
+bond_predictor: ckpt/bond_trained.pt
 
 sample:
   seed: 2023
