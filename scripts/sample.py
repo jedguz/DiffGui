@@ -343,7 +343,6 @@ def main(args):
                                     mol_traj.append(Chem.MolFromSmiles('O'))
                             mol_info['traj'] = mol_traj
                     except:
-                        pool.failed.append(mol_info)
                         logger.warning('RDkit error encountered.')
                         continue    
                     gen_list.append(mol_info)
