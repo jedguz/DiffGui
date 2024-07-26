@@ -107,3 +107,8 @@ Revise the sample.yml file to sample molecules for all pockets in test set. Set 
 ### Sample molecules based on given fragments (lead optimization)
 Revise the sample.yml file to sample molecules based on given fragments. Set `target` to pocket file (eg. sample/3ztx_pocket.pdb), set `frag` to fragment file (eg. sample/3ztx_frag.sdf), set `gen_mode` to frag_cond or frag_diff, and set `mode` to pocket.
 
+## Evaluate
+```bash
+python scripts/evaluate.py --config configs/eval/eval.yml
+```
+The docking mode can be chosen from {qvina, vina_score, vina_dock, none}.
