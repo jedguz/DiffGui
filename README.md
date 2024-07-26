@@ -74,7 +74,7 @@ To process the dataset from scratch, you need to download CrossDocked2020 v1.1 f
 The trained model checkpoint files are stored in [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r).
 * `pretrained.pt` is the checkpoint file pretrained on the CrossDocked dataset without labeling.
 * `trained.pt` is the checkpoint file trained on the PDBbind dataset with labeling.
-* `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used during sampling process.
+* `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used as guidance during sampling process.
 
 ### Training from scratch
 ```bash
@@ -92,7 +92,7 @@ python scripts/train_bond.py --config configs/train/train_bond.yml
 python scripts/sample.py --config configs/sample/sample.yml
 ```
 ### Sample molecules for given protein pocket
-Revise the sample.yml file to sample molecules for any given protein pocket. Set 
+Revise the sample.yml file to sample molecules for any given protein pocket. Set `target` to pocket file (eg. sample/3ztx_pocket.pdb) and set `mode` to pocket.
 ### Sample molecules for all pockets in test set
 
 ### Sample molecules based on given fragments (lead optimization)
