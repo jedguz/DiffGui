@@ -1,6 +1,6 @@
 model:
   checkpoint: ckpt/trained.pt
-  target: sample/WDR5_pocket.pdb
+  target: sample/3ztx_pocket.pdb
   ligand: None
   frag: None
   gen_mode: denovo # [denovo, frag_cond, frag_diff]
@@ -14,7 +14,7 @@ bond_predictor: ckpt/bond_trained.pt
 
 sample:
   seed: 2023
-  batch_size: 5
+  batch_size: 2
   num_mols: 10
   save_traj_prob: 0.02
   sample: True
@@ -29,9 +29,12 @@ sample:
 
 data:
   name: protein_ligand
-  path: data/pdbbind_data/PDBbind_v2020_pocket10
-  split: data/pdbbind_data/PDBbind_pocket10_split.pt
-  protein_root: data/pdbbind_data/PDBbind_v2020
+  path: data/PDBbind_v2020_pocket10
+  split: data/PDBbind_pocket10_split.pt
+  protein_root: data/PDBbind_v2020
+  #path: data/crossdocked_v1.1_rmsd1.0_pocket10
+  #split: data/crossdocked_pocket10_pose_split.pt
+  #protein_root: data/crossdocked_v1.1_rmsd1.0
   dataset: pdbbind # [pdbbind, crossdocked]
   transform:
     ligand_atom_mode: aromatic # [basic, aromatic, full]
