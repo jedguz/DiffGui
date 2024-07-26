@@ -58,7 +58,7 @@ train:
   resume: False
   resume_ckpt: None
   prev_model: True
-  prev_ckpt: ckpt/DiffGui_nolab.pt
+  prev_ckpt: ckpt/pretrained.pt
   optimizer:
     type: adamw
     lr: 1.e-4
