@@ -72,7 +72,6 @@ To process the dataset from scratch, you need to download CrossDocked2020 v1.1 f
 ## Training
 ### Trained model checkpoint
 The trained model checkpoint files are stored in [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r).
-* `pretrained.pt` is the checkpoint file pretrained on the CrossDocked dataset without labeling.
 * `trained.pt` is the checkpoint file trained on the PDBbind dataset with labeling.
 * `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used as guidance during sampling process.
 
@@ -91,6 +90,8 @@ python scripts/train_bond.py --config configs/train/train_bond.yml
 ```bash
 python scripts/sample.py --config configs/sample/sample.yml
 ```
+Place the downloaded or trained checkpoint files in `ckpt` folder.
+
 The values of logp, tpsa, sa, qed, aff can be adjusted to generate molecules with desired properties.
 * `logp` is octanol-water partition coefficient. It ranges from -2.0 to 5.0. High value indicates hydrophobicity and low value indicates hydrophilicity. The logp values of most drugs are located between 1.0 and 3.0.
 * `tpsa` is topogical polar surface area. High value indicates high water solubility and low value indicates high lipid solubility. The tpsa values of most drugs are located between 20 and 60.
