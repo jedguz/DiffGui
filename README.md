@@ -90,7 +90,7 @@ python scripts/train_bond.py --config configs/train/train_bond.yml
 ```bash
 python scripts/sample.py --config configs/sample/sample.yml
 ```
-Place the downloaded or trained checkpoint files in `ckpt` folder.
+Place the downloaded or self-trained checkpoint files in the `ckpt` folder.
 
 The values of logp, tpsa, sa, qed, aff can be adjusted to generate molecules with desired properties.
 * `logp` is octanol-water partition coefficient. It ranges from -2.0 to 5.0. High value indicates hydrophobicity and low value indicates hydrophilicity. The logp values of most drugs are located between 1.0 and 3.0.
