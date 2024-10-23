@@ -32,7 +32,7 @@ The package version should be changed according to your need.
 ## Datasets
 The benchmark datasets utilized in this project are PDBbind and CrossDocked.
 ### PDBbind
-To train the model from scratch, you need to download the preprocessed lmdb file and split file:
+To train the model from scratch, you need to download the preprocessed lmdb file and split file from [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r):
 * `PDBbind_v2020_pocket10_processed_final.lmdb`
 * `PDBbind_pocket10_split.pt`
 
@@ -51,7 +51,7 @@ To process the dataset from scratch, you need to download PDBbind_v2020 from [he
     ```
 
 ### CrossDocked
-To train the model from scratch, you need to download the preprocessed lmdb file and split file:
+To train the model from scratch, you need to download the preprocessed lmdb file and split file from [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r):
 * `crossdocked_v1.1_rmsd1.0_pocket10_processed_final.lmdb`
 * `crossdocked_pocket10_pose_split.pt`
 
