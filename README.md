@@ -30,13 +30,13 @@ pip install softwares/torch_scatter-2.1.1+pt113cu116-cp37-cp37m-linux_x86_64.whl
 The package version should be changed according to your need.
 
 ## Datasets
-The benchmark datasets utilized in this project, PDBbind and CrossDocked, are stored in the Google Drive [data](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r) folder.
+The benchmark datasets utilized in this project are PDBbind and CrossDocked.
 ### PDBbind
 To train the model from scratch, you need to download the preprocessed lmdb file and split file:
 * `PDBbind_v2020_pocket10_processed_final.lmdb`
 * `PDBbind_pocket10_split.pt`
 
-To process the dataset from scratch, you need to download PDBbind_v2020 from [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r), save it in `data`, unzip it, and run the following scripts in `data`:
+To process the dataset from scratch, you need to download PDBbind_v2020 from [here](http://www.pdbbind.org.cn/download.php), save it in `data`, unzip it, and run the following scripts in `data`:
 * [clean_pdbbind.py](data/clean_pdbbind.py) will clean the original dataset, extract the binding affinity and calculate QED, SA, LogP, and TPSA of ligands. It will generate a `index.pkl` file and save it in `data/PDBbind_v2020` folder. *You don't need to do these steps if you have downloaded .lmdb file.*
     ```bash
     python clean_pdbbind.py --source PDBbind_v2020
