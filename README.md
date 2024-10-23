@@ -73,7 +73,7 @@ To process the dataset from scratch, you need to download CrossDocked2020 v1.1 f
 ### Trained model checkpoint
 The trained model checkpoint files are stored in [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r).
 * `trained.pt` is the checkpoint file trained on the PDBbind dataset with labeling.
-* `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used as guidance during sampling process.
+* `bond_trained.pt` is the checkpoint file of bond predictor trained on the PDBbind dataset. This should be used as guidance during the sampling process.
 
 ### Training from scratch
 ```bash
