@@ -57,8 +57,8 @@ train:
   use_amp: True
   resume: False
   resume_ckpt: None
-  prev_model: True
-  prev_ckpt: ckpt/pretrained.pt
+  prev_model: False
+  prev_ckpt: None
   optimizer:
     type: adamw
     lr: 1.e-4
