@@ -1,5 +1,5 @@
 # Target-aware 3D Molecular Generation Based on Guided Equivariant Diffusion Model
-Official implementation of ***DiffGui***, a guided diffusion model for de novo structure-based drug design and lead optimization, by Qiaoyu Hu<sup>1,*</sup>, Changzhi Sun, Huang He, JiaZheng Xu, Danlin Liu, Wenqing Zhang, Sumeng Shi, Kang Zhang, YanYan Diao, and Honglin Li.
+Official implementation of ***DiffGui***, a guided diffusion model for de novo structure-based drug design and lead optimization, by Qiaoyu Hu<sup>1,*</sup>, Changzhi Sun<sup>1</sup>, Huang He<sup>1</sup>, JiaZheng Xu<sup>1</sup>, Danlin Liu<sup>1</sup>, Wenqing Zhang, Sumeng Shi, Kang Zhang, YanYan Diao, and Honglin Li<sup>*</sup>.
 
 <p align="center">
   <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" /> 
