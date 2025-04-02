@@ -5,7 +5,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
   <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" /><br>
   <strong>图1.</strong> DiffGui模型框架示意图
 </p>
-![动图描述]()
+![动图描述](https://github.com/QiaoyuHu89/DiffGui/blob/main/figures/DiffGui_animation.gif)
 
 ## Installation
 
