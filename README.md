@@ -2,7 +2,8 @@
 Official implementation of ***DiffGui***, a guided diffusion model for de novo structure-based drug design and lead optimization, by Qiaoyu Hu<sup>1,#</sup>, Changzhi Sun<sup>1</sup>, Huang He<sup>1</sup>, JiaZheng Xu<sup>1</sup>, Danlin Liu<sup>1</sup>, Wenqing Zhang, Sumeng Shi, Kang Zhang, YanYan Diao, and Honglin Li<sup>#</sup>.
 
 <p align="center">
-  <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" /> 
+  <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" />
+  <em>图1. DiffGUi模型框架示意图</em>
 </p>
 
 ## Installation
