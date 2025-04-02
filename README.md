@@ -9,7 +9,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
 <p align="center">
 <img src="figures/DiffGui_animation.gif" 
      alt="DiffGui Animation" 
-     width="600" 
+     width="550" 
      style="display: block; margin: 0 auto;"
      autoplay 
      loop 
