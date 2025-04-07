@@ -14,7 +14,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
      autoplay 
      loop 
      muted><br>
-  <strong>图2.</strong> DiffGui animation
+  <strong>图2.</strong> Animation of molecule generation by DiffGui
 </p>
 
 ## Installation
