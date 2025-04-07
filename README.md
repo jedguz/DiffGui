@@ -3,7 +3,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
 
 <p align="center">
   <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" /><br>
-  <strong>图1.</strong> DiffGui model framework
+  <strong>Fig 1.</strong> DiffGui framework
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
      autoplay 
      loop 
      muted><br>
-  <strong>图2.</strong> Animation of molecule generation by DiffGui
+  <strong>Fig 2.</strong> Animation of molecule generation by DiffGui
 </p>
 
 ## Installation
