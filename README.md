@@ -3,7 +3,7 @@ Official implementation of ***DiffGui***, a guided diffusion model for de novo s
 
 <p align="center">
   <img src="figures/DiffGui_framework.png" alt="DiffGui Framework" /><br>
-  <strong>图1.</strong> DiffGui framework
+  <strong>图1.</strong> DiffGui model framework
 </p>
 
 <p align="center">
