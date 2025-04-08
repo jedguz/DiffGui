@@ -118,3 +118,4 @@ python scripts/evaluate.py --config configs/eval/eval.yml
 The docking mode can be chosen from {qvina, vina_score, vina_dock, none}.
 
 ## Citation
+Please consider citing our paper if you find it helpful. Thank you!
