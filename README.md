@@ -104,7 +104,7 @@ The values of logp, tpsa, sa, qed, aff can be adjusted to generate molecules wit
 
 ### Sample molecules for given protein pocket
 Revise the sample.yml file to sample molecules for any given protein pocket. Set `target` to pocket file (eg. sample/3ztx_pocket.pdb), set `gen_mode` to denovo, and set `mode` to pocket.
-In sample folder, you can use the protein and ligand files to extract the pocket file. For example:
+In sample folder, you can use the protein file and ligand file to extract the pocket file. For example:
 ```bash
 python extract_pockets.py --protein 3ztx_protein.pdb --ligand 3ztx_ligand.sdf --radius 10 --pocket 3ztx_pocket.pdb
 ```
