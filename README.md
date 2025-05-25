@@ -111,6 +111,7 @@ python extract_pockets.py --protein 3ztx_protein.pdb --ligand 3ztx_ligand.sdf --
 
 ### Sample molecules for all pockets in test set
 Revise the sample.yml file to sample molecules for all pockets in test set. Set `target` to None and set `mode` to test.
+If you want to sample for the PDBbind test set, then set 
 
 ### Sample molecules based on given fragments (lead optimization)
 Revise the sample.yml file to sample molecules based on given fragments. Set `target` to pocket file (eg. sample/3ztx_pocket.pdb), set `frag` to fragment file (eg. sample/3ztx_frag.sdf), set `gen_mode` to frag_cond or frag_diff, and set `mode` to pocket.
