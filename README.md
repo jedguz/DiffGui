@@ -110,6 +110,10 @@ In sample folder, you can use the protein file and ligand file to extract the po
 ```bash
 python extract_pockets.py --protein 3ztx_protein.pdb --ligand 3ztx_ligand.sdf --radius 10 --pocket 3ztx_pocket.pdb
 ```
+If you encounter rdkit error, then use Obabel to formalize ligand file.
+```bash
+Obabel 3ztx_ligand.sdf -O3ztx_ligand.sdf
+```
 
 ### Sample molecules for all pockets in test set
 Revise the sample.yml file to sample molecules for all pockets in test set.  
