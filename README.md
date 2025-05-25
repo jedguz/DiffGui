@@ -82,7 +82,8 @@ To process the dataset from scratch, you need to download CrossDocked2020 v1.1 f
 ```bash
 python scripts/train.py --config configs/train/train.yml
 ```
-If you want to resume the training, you need to revise the train.yml file. Set `resume` to True and set `resume_ckpt` to the checkpoint that you want to resume, eg. 100000.pt. In addition, `log_dir` should be defined by `args.logdir` (the previous training directory) instead of using `get_new_log_dir` function.
+If you want to resume the training, you need to revise the train.yml file.  
+Set `resume` to True and set `resume_ckpt` to the checkpoint that you want to resume, eg. 100000.pt. In addition, `log_dir` should be defined by `args.logdir` (the previous training directory) instead of using `get_new_log_dir` function.
 
 ### Training bond predictor
 ```bash
@@ -111,8 +112,9 @@ python extract_pockets.py --protein 3ztx_protein.pdb --ligand 3ztx_ligand.sdf --
 ```
 
 ### Sample molecules for all pockets in test set
-Revise the sample.yml file to sample molecules for all pockets in test set. Set `target` to None and set `mode` to test.
-If you want to sample for the PDBbind test set, then set `path` to data/PDBbind_v2020_pocket10, set `split` to data/PDBbind_pocket10_split.pt, set `protein_root` to data/PDBbind_v2020, and set `dataset` to pdbbind.
+Revise the sample.yml file to sample molecules for all pockets in test set.  
+Set `target` to None and set `mode` to test.  
+If you want to sample for the PDBbind test set, then set `path` to data/PDBbind_v2020_pocket10, set `split` to data/PDBbind_pocket10_split.pt, set `protein_root` to data/PDBbind_v2020, and set `dataset` to pdbbind.  
 If you want to sample for the CrossDocked test set, then set `path` to data/crossdocked_v1.1_rmsd1.0_pocket10, set `split` to data/crossdocked_pocket10_pose_split.pt, set `protein_root` to data/crossdocked_v1.1_rmsd1.0, and set `dataset` to crossdocked. 
 
 ### Sample molecules based on given fragments (lead optimization)
