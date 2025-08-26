@@ -44,6 +44,10 @@ The package version should be changed according to your need.
 ## Datasets
 The benchmark datasets utilized in this project are PDBbind and CrossDocked.
 ### PDBbind
+To train the model from scratch, you need to download the preprocessed lmdb file and split file from [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r):
+* `PDBbind_v2020_pocket10_processed_final.lmdb`
+* `PDBbind_pocket10_split.pt`
+
 To process the dataset from scratch, you need to download PDBbind_v2020 from [here](http://www.pdbbind.org.cn/download.php), save it in `data`, unzip it, and run the following scripts in `data`:
 * [clean_pdbbind.py](data/clean_pdbbind.py) will clean the original dataset, extract the binding affinity and calculate QED, SA, LogP, and TPSA of ligands. It will generate a `index.pkl` file and save it in `data/PDBbind_v2020` folder.
     ```bash
@@ -59,6 +63,10 @@ To process the dataset from scratch, you need to download PDBbind_v2020 from [he
     ```
 
 ### CrossDocked
+To train the model from scratch, you need to download the preprocessed lmdb file and split file from [here](https://drive.google.com/drive/folders/1pQk1FASCnCLjYRd7yc17WfctoHR50s2r):
+* `crossdocked_v1.1_rmsd1.0_pocket10_processed_final.lmdb`
+* `crossdocked_pocket10_pose_split.pt`
+
 To process the dataset from scratch, you need to download CrossDocked2020 v1.1 from [here](https://bits.csb.pitt.edu/files/crossdock2020/), save it in `data`, unzip it, and run the following scripts in `data`:
 * [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and retain the poses with RMSD < 1 A. It will generate a `index.pkl` file and create a new directory containing the filtered data .
     ```bash
