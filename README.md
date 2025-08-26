@@ -142,3 +142,4 @@ The docking mode can be chosen from {qvina, vina_score, vina_dock, none}.
 
 ## Citation
 Please consider citing our paper if you find it helpful. Thank you!
+Qiaoyu Hu, Changzhi Sun, Huan He, Jiazheng Xu, Danlin Liu, Wenqing Zhang, Sumeng Shi, Kai Zhang, Honglin Li. Target-aware 3D molecular generation based on guided equivariant diffusion. Nature Communications, 2025, 16, 7928.
