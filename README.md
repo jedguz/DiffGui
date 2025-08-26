@@ -68,7 +68,7 @@ To train the model from scratch, you need to download the preprocessed lmdb file
 * `crossdocked_pocket10_pose_split.pt`
 
 To process the dataset from scratch, you need to download CrossDocked2020 v1.1 from [here](https://bits.csb.pitt.edu/files/crossdock2020/), save it in `data`, unzip it, and run the following scripts in `data`:
-* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and retain the poses with RMSD < 1 A. It will generate a `index.pkl` file and create a new directory containing the filtered data .
+* [clean_crossdocked.py](data/clean_crossdocked.py) will filter the original dataset and retain the poses with RMSD < 1.0 A. It will generate a `index.pkl` file and create a new directory containing the filtered data .
     ```bash
     python clean_crossdocked.py --source CrossDocked2020 --dest crossdocked_v1.1_rmsd1.0 --rmsd_thr 1.0
     ```
@@ -143,4 +143,4 @@ The docking mode can be chosen from {qvina, vina_score, vina_dock, none}.
 ## Citation
 Please consider citing our paper if you find it helpful. Thank you!
 
-`Qiaoyu Hu, Changzhi Sun, Huan He, Jiazheng Xu, Danlin Liu, Wenqing Zhang, Sumeng Shi, Kai Zhang, Honglin Li. Target-aware 3D molecular generation based on guided equivariant diffusion. ***Nature Communications***, 2025, 16, 7928.`
+`Qiaoyu Hu, Changzhi Sun, Huan He, Jiazheng Xu, Danlin Liu, Wenqing Zhang, Sumeng Shi, Kai Zhang, Honglin Li. Target-aware 3D molecular generation based on guided equivariant diffusion. Nature Communications, 2025, 16, 7928.`
