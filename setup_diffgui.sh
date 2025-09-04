@@ -9,6 +9,7 @@ VENV_DIR="$(pwd)/.venv"
 # Load system Python (adjust if needed)
 module load python/$PYTHON_VER
 module load rdkit
+module load autodock-vina
 module load openbabel
 # Load CUDA if you plan to use GPUs (safe to ignore on login node)
 module load cuda/12.2 || module load cuda/11.8 || true

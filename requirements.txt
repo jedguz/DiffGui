@@ -32,3 +32,10 @@ gsd
 # Utilities
 tensorboard
 easydict
+
+diffusers
+docutils
+filelock
+fsspec
+torch_scatter
+torch_cluster
